@@ -20,7 +20,7 @@
             "order": 0
         }
     },
-    "repository": "https://github.com/flossingdc/origin",
+    "repository": "https://github.com/flossingdc/markdown-image-copy-paste",
     "license": "MIT",
     "engines": {
         "atom": ">=1.0.0 <2.0.0"
