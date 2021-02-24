@@ -8,3 +8,4 @@ Add a folder to settings and it will automatically create folder & place image i
 ### Usage:
 1. Copy an image
 2. Hit `ctrl+alt+v` to paste image to markdown document
+3. Alternatively, use the right-click menu item: "Paste Markdown Image"

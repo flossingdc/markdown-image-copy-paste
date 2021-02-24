@@ -20,7 +20,7 @@
             "order": 0
         }
     },
-    "repository": "https://github.com/atom/zz-md-image-paste",
+    "repository": "https://github.com/flossingdc/origin",
     "license": "MIT",
     "engines": {
         "atom": ">=1.0.0 <2.0.0"
