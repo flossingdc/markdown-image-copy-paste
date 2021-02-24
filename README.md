@@ -1,4 +1,4 @@
-# <center><p style='color:#2fbb9a;'>Markdown Insert Image</p></center>
+# <center><p style='color:#2fbb9a;'>Markdown-Image-Copy-Paste</p></center>
 ### Function:
 Will insert an image into your Markdown file with a HTML tag:
 * `<img src='1234.png' width='500'>`

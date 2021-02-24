@@ -1,6 +1,6 @@
 'use babel';
 
-import MyPackage from '../lib/zz-md-image-paste';
+import MyPackage from '../lib/markdown-image-copy-paste';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
@@ -12,32 +12,32 @@ describe('MyPackage', () => {
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('zz-md-image-paste');
+    activationPromise = atom.packages.activatePackage('markdown-image-copy-paste');
   });
 
-  describe('when the zz-md-image-paste:toggle event is triggered', () => {
+  describe('when the markdown-image-copy-paste:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.zz-md-image-paste')).not.toExist();
+      expect(workspaceElement.querySelector('.markdown-image-copy-paste')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'zz-md-image-paste:toggle');
+      atom.commands.dispatch(workspaceElement, 'markdown-image-copy-paste:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.zz-md-image-paste')).toExist();
+        expect(workspaceElement.querySelector('.markdown-image-copy-paste')).toExist();
 
-        let myPackageElement = workspaceElement.querySelector('.zz-md-image-paste');
+        let myPackageElement = workspaceElement.querySelector('.markdown-image-copy-paste');
         expect(myPackageElement).toExist();
 
         let myPackagePanel = atom.workspace.panelForItem(myPackageElement);
         expect(myPackagePanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'zz-md-image-paste:toggle');
+        atom.commands.dispatch(workspaceElement, 'markdown-image-copy-paste:toggle');
         expect(myPackagePanel.isVisible()).toBe(false);
       });
     });
@@ -51,11 +51,11 @@ describe('MyPackage', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.zz-md-image-paste')).not.toExist();
+      expect(workspaceElement.querySelector('.markdown-image-copy-paste')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'zz-md-image-paste:toggle');
+      atom.commands.dispatch(workspaceElement, 'markdown-image-copy-paste:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,9 +63,9 @@ describe('MyPackage', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let myPackageElement = workspaceElement.querySelector('.zz-md-image-paste');
+        let myPackageElement = workspaceElement.querySelector('.markdown-image-copy-paste');
         expect(myPackageElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'zz-md-image-paste:toggle');
+        atom.commands.dispatch(workspaceElement, 'markdown-image-copy-paste:toggle');
         expect(myPackageElement).not.toBeVisible();
       });
     });

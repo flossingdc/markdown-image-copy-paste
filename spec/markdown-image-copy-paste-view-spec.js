@@ -1,6 +1,6 @@
 'use babel';
 
-import MyPackageView from '../lib/zz-md-image-paste-view';
+import MyPackageView from '../lib/markdown-image-copy-paste-view';
 
 describe('MyPackageView', () => {
   it('has one valid test', () => {

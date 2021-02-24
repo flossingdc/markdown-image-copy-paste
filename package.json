@@ -1,7 +1,7 @@
 {
-    "name": "zz-md-image-paste",
+    "name": "markdown-image-copy-paste",
     "version": "0.0.0",
-    "main": "./lib/zz-md-image-paste",
+    "main": "./lib/markdown-image-copy-paste",
     "description": "Paste image into markdown file.",
     "keywords": [
         "markdown",
@@ -9,7 +9,7 @@
         "image"
     ],
     "activationCommands": {
-        "atom-text-editor": "zz-md-image-paste:paste"
+        "atom-text-editor": "markdown-image-copy-paste:paste"
     },
     "configSchema": {
         "imagePath": {

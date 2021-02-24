@@ -3,7 +3,7 @@
     "atom-text-editor": [
       {
         "label": "Paste Markdown Image",
-        "command": "zz-md-image-paste:paste"
+        "command": "markdown-image-copy-paste:paste"
       }
     ]
   }
