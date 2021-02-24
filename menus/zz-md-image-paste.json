@@ -1,0 +1,10 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle zz-md-image-paste",
+        "command": "zz-md-image-paste:paste"
+      }
+    ]
+  }
+}

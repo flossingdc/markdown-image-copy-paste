@@ -1,0 +1,30 @@
+{
+    "name": "zz-md-image-paste",
+    "version": "0.0.0",
+    "main": "./lib/zz-md-image-paste",
+    "description": "Paste image into markdown file.",
+    "keywords": [
+        "markdown",
+        "md",
+        "image"
+    ],
+    "activationCommands": {
+        "atom-text-editor": "zz-md-image-paste:paste"
+    },
+    "configSchema": {
+        "imagePath": {
+            "type": "string",
+            "default": "",
+            "title": "Save images in this path",
+            "description": "The image is saved in the same directory as the md file by default. You can use template strings such as ${fileName} ${fileNameWithoutSuffix}.",
+            "order": 0
+        }
+    },
+    "repository": "https://github.com/atom/zz-md-image-paste",
+    "license": "MIT",
+    "engines": {
+        "atom": ">=1.0.0 <2.0.0"
+    },
+    "dependencies": {},
+    "deprecated": false
+}
